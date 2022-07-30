@@ -1,0 +1,13 @@
+-- CreateTable
+CREATE TABLE "Example" (
+    "id" TEXT NOT NULL PRIMARY KEY
+);
+
+-- CreateTable
+CREATE TABLE "Todo" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL,
+    "complete" BOOLEAN NOT NULL DEFAULT false,
+    "todo" TEXT NOT NULL
+);
